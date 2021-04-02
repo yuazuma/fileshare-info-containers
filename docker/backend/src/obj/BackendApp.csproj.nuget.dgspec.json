@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/c/Users/0483azuma/Documents/Git/fileshare-info-containers/docker/backend/src/BackendApp.csproj": {}
+  },
+  "projects": {
+    "/mnt/c/Users/0483azuma/Documents/Git/fileshare-info-containers/docker/backend/src/BackendApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/c/Users/0483azuma/Documents/Git/fileshare-info-containers/docker/backend/src/BackendApp.csproj",
+        "projectName": "BackendApp",
+        "projectPath": "/mnt/c/Users/0483azuma/Documents/Git/fileshare-info-containers/docker/backend/src/BackendApp.csproj",
+        "packagesPath": "/home/y/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/0483azuma/Documents/Git/fileshare-info-containers/docker/backend/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/y/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

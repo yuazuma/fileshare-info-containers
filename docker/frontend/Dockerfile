@@ -1,13 +1,12 @@
-# node:lts-buster-slim
-FROM node:14.16.0-buster-slim as build-stage
+# sdk:latest
+FROM mcr.microsoft.com/dotnet/sdk:5.0.201-buster-slim-amd64 AS build-stage
 WORKDIR /app
-COPY ./src/package*.json ./
-RUN npm install
 ADD ./src ./
-RUN npm run build
+RUN dotnet restore
+RUN dotnet publish -c Release -o out
 
 # nginx:stable-alpine
 FROM nginx:1.18.0-alpine as prod-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY --from=build-stage /app/out/wwwroot /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
