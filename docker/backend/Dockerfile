@@ -1,7 +1,7 @@
 # sdk:latest
 FROM mcr.microsoft.com/dotnet/sdk:5.0.201-buster-slim-amd64 AS build-stage
 WORKDIR /app
-RUN git clone https://github.com/yuazuma/todo-jwt .
+RUN git clone https://github.com/yuazuma/fileshare-info-ui-backend .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
